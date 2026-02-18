@@ -1,3 +1,5 @@
+@use '../base' as *;
+
 .process__card {
 
     @include respond(tab-port){

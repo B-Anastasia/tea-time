@@ -1,3 +1,5 @@
+@use '../base' as *;
+
 .footer {
     background-color: $color-grey-footer;
     padding-top: 4rem;

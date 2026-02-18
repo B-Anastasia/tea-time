@@ -1,24 +1,20 @@
-@import "base/mixins";
-@import "base/variables";
-@import "base/base";
-@import "base/typography";
+@use 'base/base';
+@use 'base/typography';
 
-@import "layout/header";
-@import "layout/container";
-@import "layout/process";
-@import "layout/tea";
-@import "layout/cup";
-@import "layout/review";
-@import "layout/social";
-@import "layout/footer";
+@use 'layout/header';
+@use 'layout/container';
+@use 'layout/process';
+@use 'layout/tea';
+@use 'layout/cup';
+@use 'layout/review';
+@use 'layout/social';
+@use 'layout/footer';
 
-
-@import "components/btn";
-@import "components/slider";
-@import "components/btn_review";
-@import "components/card_message";
-@import "components/navigation";
-@import "components/process_card";
-@import "components/tea_card";
-@import "components/card_review";
-// --host=192.168.1.23
+@use 'components/btn';
+@use 'components/slider';
+@use 'components/btn_review';
+@use 'components/card_message';
+@use 'components/navigation';
+@use 'components/process_card';
+@use 'components/tea_card';
+@use 'components/card_review';

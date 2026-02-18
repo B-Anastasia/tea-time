@@ -12,26 +12,15 @@ function check () {
 
 var btn = document.querySelector(".header__message");
 var btnClose = document.querySelector(".form__close");
-var form = document.querySelector('.header__message-form');
-var text = document.querySelector('.header__text');
+var header = document.querySelector('.header');
 
-btn.addEventListener("click", show);
-btnClose.addEventListener("click", hide);
+btn.addEventListener("click", function () {
+    header.classList.add('header--form-open');
+});
 
-function show() {
-    form.style.display = 'block';
-    btn.style.display = 'none';
-    text.style.display = 'none';
-}
-
-//TODO: hide form
-
-function hide(){
-    form.style.display = 'none';
-    text.style.display = 'block';
-    btn.style.display = 'block';
-
-}
+btnClose.addEventListener("click", function () {
+    header.classList.remove('header--form-open');
+});
 
 
 //TODO: create SLIDER

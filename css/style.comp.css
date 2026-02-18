@@ -167,28 +167,26 @@ body {
 }
 .header__message-form {
   min-width: 20%;
-  min-height: 40%;
   left: 10rem;
   position: absolute;
   bottom: 0;
   background-color: #fbfbfb;
   box-shadow: 0 0.5px 2rem rgba(0, 0, 0, 0.2);
   border-radius: 2px;
-  padding: 1rem 2.5rem;
+  padding: 1rem 2.5rem 2rem;
 }
 @media only screen and (max-width: 75em) {
   .header__message-form {
     left: 5rem;
     min-width: 17%;
-    max-height: 55%;
   }
 }
 @media only screen and (max-width: 56.25em) {
   .header__message-form {
     display: none;
     width: 60%;
-    height: 70%;
     border-radius: 2rem;
+    padding: 3rem 3rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -197,7 +195,8 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .header__message-form {
-    width: 80%;
+    width: 85%;
+    padding: 2.5rem 2rem;
     z-index: 30;
   }
 }
@@ -241,6 +240,15 @@ body {
   height: 6rem;
   border-radius: 50%;
   padding: 0;
+}
+@media only screen and (max-width: 56.25em) {
+  .header--form-open .header__text,
+  .header--form-open .header__message {
+    display: none;
+  }
+  .header--form-open .header__message-form {
+    display: block;
+  }
 }
 
 .container {
@@ -648,8 +656,8 @@ body {
 @media only screen and (max-width: 56.25em) {
   .form__close {
     display: block;
-    right: 0;
-    top: 0;
+    right: 1.5rem;
+    top: 1.5rem;
     position: absolute;
   }
   .form__close-btn {

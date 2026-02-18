@@ -68,33 +68,30 @@
 
     &__message-form {
         min-width: 20%;
-        min-height: 40%;
         left: 10rem;
         position: absolute;
         bottom: 0;
         background-color: $color-white-grey;
         box-shadow: $border-shadow;
         border-radius: 2px;
-        padding: 1rem 2.5rem;
+        padding: 1rem 2.5rem 2rem;
 
         @include respond(tab-land) {
             left: 5rem;
             min-width: 17%;
-            max-height: 55%;
         }
 
         @include respond(tab-port) {
             display: none;
             width: 60%;
-            height: 70%;
             border-radius: 2rem;
+            padding: 3rem 3rem;
             @include posCenter;
-
-
         }
 
         @include respond(phone) {
-            width: 80%;
+            width: 85%;
+            padding: 2.5rem 2rem;
             z-index: 30;
         }
     }
@@ -143,9 +140,18 @@
         height: 6rem;
         border-radius: 50%;
         padding: 0;
-
-
     }
 
+    &--form-open {
+        @include respond(tab-port) {
+            .header__text,
+            .header__message {
+                display: none;
+            }
 
+            .header__message-form {
+                display: block;
+            }
+        }
+    }
 }

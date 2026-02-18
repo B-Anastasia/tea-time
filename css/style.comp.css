@@ -186,7 +186,7 @@ body {
     display: none;
     width: 60%;
     border-radius: 2rem;
-    padding: 3rem 3rem;
+    padding: 3rem 3.5rem 4rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -196,7 +196,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .header__message-form {
     width: 85%;
-    padding: 2.5rem 2rem;
+    padding: 2.5rem 2.5rem 2rem;
     z-index: 30;
   }
 }
@@ -656,12 +656,19 @@ body {
 @media only screen and (max-width: 56.25em) {
   .form__close {
     display: block;
-    right: 1.5rem;
-    top: 1.5rem;
+    right: 0.5rem;
+    top: 0.5rem;
     position: absolute;
   }
   .form__close-btn {
     fill: #ff5c36;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+  }
+  .form__close-btn:hover {
+    box-shadow: none;
+    transform: none;
   }
 }
 

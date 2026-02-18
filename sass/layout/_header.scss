@@ -85,13 +85,13 @@
             display: none;
             width: 60%;
             border-radius: 2rem;
-            padding: 3rem 3rem;
+            padding: 3rem 3.5rem 4rem;
             @include posCenter;
         }
 
         @include respond(phone) {
             width: 85%;
-            padding: 2.5rem 2rem;
+            padding: 2.5rem 2.5rem 2rem;
             z-index: 30;
         }
     }

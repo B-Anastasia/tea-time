@@ -47,13 +47,20 @@
 
         @include respond (tab-port) {
             display: block;
-            right: 1.5rem;
-            top: 1.5rem;
+            right: 0.5rem;
+            top: 0.5rem;
             position: absolute;
 
             &-btn {
                 fill: $color-primary-orange;
+                width: 2.5rem;
+                height: 2.5rem;
+                padding: 0;
 
+                &:hover {
+                    box-shadow: none;
+                    transform: none;
+                }
             }
         }
     }
